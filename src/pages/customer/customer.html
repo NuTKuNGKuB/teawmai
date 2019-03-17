@@ -1,0 +1,21 @@
+<!--
+  Generated template for the CustomerPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>customer</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-list-header>Our Customer</ion-list-header>
+    <ion-item *ngFor="let c of allcustomer" (click)=showcustomer(c.id)>
+      <h2>{{c.id}}: {{c.name}}</h2> 
+       <P>Tel. {{c.tell}}</P> 
+    </ion-item>
+  </ion-list>
+</ion-content>
